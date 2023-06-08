@@ -1,0 +1,19 @@
+API REST PROYECTO UNO
+
+Nuestra api tendrá la siguiente arquitectura
+
+Postman(cliente) <-> Controlador <-> Servicio <-> DAO repository <-> BBDD
+
+Para este primer proyecto no interactuamos con una base de datos, lo hizimos toodo de forma local
+
+1. CREACION DE LA ENTIDAD Y REPOSITORIO PARA OPERACIONES CRUD
+Lo primero es crear la entidad correspondiente, en este caso no anotamos con jpa, pues no vamos a interactuar con la base de datos.
+Despues crear nuestro Repository, en este caso creamos una clase y no implementamos ninguna interfaz, creamos de forma manual todos los metodos para hacer un crud.
+
+
+2.CREACION DEL SERVICIO
+Creamos nuestro servicio el cual va a implementar o llamar el repository
+
+
+3. CREACION DEL CONTROLLER Y PROBANDO EN POSTMAN
+Creamos el controller que llamara al service para realizar los crud, y para esto usaremos los metodos http y probaremos en postman.

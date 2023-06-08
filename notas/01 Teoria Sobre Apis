@@ -1,0 +1,33 @@
+API REST CON SPRING BOOT
+
+QUE ES UNA API REST
+Una api es la que permite conectar dos sistemas para que compartan informacion. Una api nos permite conectar al cliente con el servidor
+Rest: es una arquitectura para apis
+
+METODOS HTTP
+Son metodos que nos van a permitir realizar operaciones/interacciones entre el cliente y servidor. Los metodos mas usados son GET, POST, PUT y DELETE, estas son las operaciones que permitiran la interaccion entre el cliente y el servidor
+
+OPERACION      SQL        HTTP Method
+Create        Insert         Post
+Read          Select         Get
+Update        Update         Put
+Delete        Delete         Delete
+
+CARACTERISTICAS PRINCIPALES DE LOS METODOS HTTP
+
+1.SEGURIDAD
+Un metodo HTTP es seguro si no provoca ningun cambio en el estado del servidor, por lo cual los metodos GET (de solo lectura) son los que se consideran seguros.
+Por lo cual si ejecuto un create,update o delete voy a hacer un cambio en el estado del servidor
+
+2.IDEMPOTENCIA
+El estado del servidor va a ser el mismo, o sea yo ejecuto una accion y la respuesta va a ser la misma, de los 4 metodos solo POST es NO IDEMPOTENTE, porque si yo ejecuto POST me devuelve un nuevo usuario, si fuera idempotente me tendria que devolver lo mismo. Si bien PUT actualiza, no me crea nada nuevo, me trae el mismo registro en la misma base de datos pero con otra informacion
+
+
+CODIGOS DE ESTADO
+
+API                    METODO HTTP     PATH           CODIGO DE ESTADO     DESCRIPCION
+Listar productos        GET         /api/v1/prod        200(OK)         recuperan todos                                                                        los produc.
+Guardar producto        POST        /api/v1/prod        201(OK)         crea new produc.
+Obtener producto        GET         /api/v1/prod/{id}   200(OK)         recupera un prod.
+Actualizar producto     PUT         /api/v1/prod/{id}   200(OK)         actua. un prod.
+Eliminar producto       DELETE      /api/v1/prod/{id}   204(No content) elimi. un prod.
