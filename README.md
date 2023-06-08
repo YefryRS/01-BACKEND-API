@@ -1,0 +1,2 @@
+# 01-BACKEND-API
+Este fue el primer proyecto realizado, cree una api totalmente manual, sin conexion a la base de datos, esto con la idea de afianzar conocimientos y entender todo el proceso para llevar a cabo una api rest. Antes de realizar este proyecto tuvo que asegurarme de tener un entendiemiento de conceptos básicos en spring boot, tales como la inyeccion de dependencias, el MVC, los beans, los metodos https, los crud, etc. No digo que los maneje a la perfeccion, pero siento que tengo cierto conocimiento
